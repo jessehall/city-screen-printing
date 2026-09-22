@@ -33,3 +33,10 @@ nav a::after{
 nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--brand-indigo)}
 nav a:hover::after,nav a:focus-visible::after,nav a[aria-current="page"]::after{transform:scaleX(1)}
 @media(prefers-reduced-motion:reduce){nav a::after{transition:none}}
+
+/* Contact details share the services strip and wrap neatly on smaller screens. */
+.strap-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 24px}
+.strap-contact{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:4px 16px;margin-left:auto;text-align:right;font-size:11px;color:var(--brand-indigo)}
+.strap-contact a,.strap-contact a:hover,.strap-contact a:focus-visible{text-decoration:none;color:var(--brand-indigo)}
+.strap-contact address{margin:0}
+.skip{z-index:10}
